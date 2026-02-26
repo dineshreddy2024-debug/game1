@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Duel</title>
+    <link rel="stylesheet" href="gamecss.css">
+    <script defer src="gamejs.js"></script>
+</head>
+<body>
+
+    <div class="scoreboard">
+        <div id="score-p1" class="player-score p1-color active">P1: <span id="p1-match-score">0</span></div>
+        <div id="score-p2" class="player-score p2-color">P2: <span id="p2-match-score">0</span></div>
+    </div>
+
+    <div id="round1" class="game-container">
+        <h2>Round 1: Pattern Memory (5x5)</h2>
+        <p id="matrix-status">Get ready...</p>
+        <div id="matrix-board" class="matrix-grid"></div>
+        <button class="reset-btn" onclick="location.reload()">Reset Game</button>
+    </div>
+
+    <div id="round2" class="game-container hidden">
+        <h2>Round 2: Memory Match</h2>
+        <p id="memory-status" class="status-text">Loading...</p>
+        <p id="pairs-count" class="pairs-count">Pairs Found: 0 / 8</p>
+        <div id="memory-grid" class="memory-grid"></div>
+    </div>
+
+</body>
+</html>
